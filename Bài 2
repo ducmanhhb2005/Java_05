@@ -1,0 +1,33 @@
+package allofthegirl;
+import java.util.*;
+public class Main {
+ public static Scanner sc = new Scanner(System.in);
+ public static double tongLuong = 0;
+ public static void nhapThongTin1Nguoi() {
+	 System.out.println("Nhap ten nguoi");
+	 String x = sc.nextLine();
+	 System.out.println("Luong Co Ban"); 
+	 double y= sc.nextDouble();
+	 sc.nextLine();
+	 System.out.println("Nhap he so Luong"); 
+	 double z= sc.nextDouble();
+	 sc.nextLine();
+	 System.out.print("Nhap Luong Max");
+	 double t= sc.nextDouble();
+	 sc.nextLine();
+	 NhanVien nhanVien = new NhanVien(x,y,z,t);
+	 tongLuong += nhanVien.tinhLuong();
+ }
+ public static double nhapNhieuThongTin() {
+	 String y = "YES";
+	 while (y.equals("YES")) {
+		 nhapThongTin1Nguoi();
+		 System.out.print("Co tiep tuc khong ");
+		 y = sc.nextLine();
+	 }
+	 return tongLuong;
+ }
+ public static void main(String[] args) {
+	System.out.print(nhapNhieuThongTin()); 
+ }
+}
