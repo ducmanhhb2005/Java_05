@@ -1,0 +1,17 @@
+Trước khi kiểm thử, ta phải tiến hành các giai đoạn sau:
+1) User Interface
+- Frame
+- Panel
+- Input Manager
+2) Object (phần quan trọng chiếm nhiều time)
+- Main player
+- Map 1: Cá nổ, Cá mập, mực, tôm, Cá mập con, Sao biển, Nhím tinh thạch, Cua tinh thể, Boss (Ursula,..)
+- Map 2: Slime, UASS(con hồng, con cam cam cầm gỗ), Boss: Con xanh xanh trong Pikachu
+- Map 3: Cloud, Tòa nhà, Loa, Boss: Lão Bụi
+3) Object (cũng quan trọng )
+- Class: Rương -> tạo đồ vật trong Rương + thêm phương thức lấy, bỏ
+- Class: Vending Machine : Tạo tương tự như Rương + thêm phương thức lấy, bỏ
+- Class: Personal Package: Tạo tương tự như hai cái trên + thêm phương thức lấy, bỏ
+- Class: Attack (Vũ khí) - kế thừa những class trên
+4) Effect - Animation
+- Kiếm ảnh / ảnh động có sẵn
