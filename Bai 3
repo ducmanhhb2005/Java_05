@@ -1,0 +1,31 @@
+package allofthegirl;
+import java.util.*;
+public class Main {
+	
+	public static void main (String[] args) {
+	Scanner sc = new Scanner(System.in);
+ String y = "1";
+ String res = "";
+ long t2 = System.currentTimeMillis();
+ while (y.equals("1")) {
+	 String x = sc.nextLine();
+	 res+=x;
+	 System.out.println("Ban co muon Tiep tuc khong");
+	 y = sc.nextLine();
+ }
+ long t3 = System.currentTimeMillis();
+ StringBuffer stringBuffer = new StringBuffer();
+ long t = System.currentTimeMillis();
+ y= "1";
+ while (y.equals("1")) {
+	 String x = sc.nextLine();
+	 stringBuffer.append(x);
+	 System.out.println("Ban co muon Tiep tuc khong");
+	 y=sc.nextLine();
+ }
+ long t1 = System.currentTimeMillis();
+ if (t3-t2 > t1-t) System.out.print("String Buffer co hieu suat cao hon");
+ else System.out.print("String normal co hieu suat cao hon");
+ 
+}
+}
